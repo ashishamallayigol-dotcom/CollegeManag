@@ -1,0 +1,243 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  background: #f5f7fa;
+}
+
+/* 🔷 Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e293b;
+  color: white;
+  padding: 15px 30px;
+}
+
+header h2 {
+  font-size: 22px;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* 🎯 Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #38bdf8, #6366f1);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  border-radius: 5px;
+  background: white;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #e2e8f0;
+}
+
+/* 📦 Sections */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+/* ⭐ Highlights */
+.highlights {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.highlights div {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 180px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* 📚 Cards */
+.card {
+  background: white;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 20px;
+  display: inline-block;
+  width: 220px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Buttons */
+button {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #4f46e5;
+}
+
+/* 📞 Form */
+form {
+  margin-top: 20px;
+}
+
+form input,
+form textarea {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form textarea {
+  height: 80px;
+}
+
+/* 🔻 Footer */
+footer {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* 🌟 Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 🎯 Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to sections */
+section {
+  animation: fadeIn 1s ease-in;
+}
+
+/* 🎯 Navbar Slide Down */
+header {
+  animation: slideDown 0.8s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* 🎯 Card Hover Animation */
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* 🎯 Button Animation */
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* 🎯 Hero Text Animation */
+.hero h1 {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero p {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero button {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* 🎯 Highlight Bounce */
+.highlights div:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+/* 🎯 Input Focus Effect */
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 5px rgba(99,102,241,0.5);
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;   
+  font-weight: 100;
+}

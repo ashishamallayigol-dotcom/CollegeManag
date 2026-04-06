@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ABC College</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+  if (localStorage.getItem("isLoggedIn") !== "true") {
+    window.location.href = "login.html";
+  }
+</script>
+
+<!-- 🔷 Navbar -->
+<header>
+  <h2>KLE College</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- 🎯 Hero Section -->
+<section class="hero">
+  <h1>Welcome to ABC College of Technology</h1>
+  <p>Empowering students with knowledge, skills, and opportunities.</p>
+  <button onclick="applyNow()">Apply Now</button>
+</section>
+
+<!-- 📘 About -->
+<section class="about">
+  <h2>About Us</h2>
+  <p>
+    ABC College is a premier institution committed to academic excellence and innovation.
+  </p>
+</section>
+
+<!-- ⭐ Highlights -->
+<section class="highlights">
+  <div>🎓 5000+ Students</div>
+  <div>🏆 95% Placement</div>
+  <div>🏢 100+ Companies</div>
+  <div>📚 50+ Courses</div>
+</section>
+
+<!-- 📚 Courses -->
+<section id="courses">
+  <h2>Our Courses</h2>
+
+  <div class="card">
+    <h3>BCA</h3>
+    <p>Duration: 3 Years</p>
+    <p>Fees: ₹60,000/year</p>
+    <button onclick="showDetails('BCA')">View Details</button>
+  </div>
+
+  <div class="card">
+    <h3>BTech</h3>
+    <p>Duration: 4 Years</p>
+    <p>Fees: ₹1,20,000/year</p>
+    <button onclick="showDetails('BTech')">View Details</button>
+  </div>
+
+  <div class="card">
+    <h3>MBA</h3>
+    <p>Duration: 2 Years</p>
+    <p>Fees: ₹90,000/year</p>
+    <button onclick="showDetails('MBA')">View Details</button>
+  </div>
+</section>
+
+<!-- 🏫 Facilities -->
+<section id="facilities">
+  <h2>Campus Facilities</h2>
+
+  <div class="card">
+   
+    <a href="library.html" class="card-link">
+         <h3 >📚 Library</h3>
+    </a>
+</div>
+  <div class="card">🧪 Laboratories</div>
+  <div class="card">🏠 Hostel</div>
+  <div class="card">⚽ Sports</div>
+  <div class="card">🍽️ Cafeteria</div>
+</section>
+
+<!-- 📞 Contact -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>ABC College, Belgaum, Karnataka</p>
+  <p>Phone: +91 98765 43210</p>
+  <p>Email: info@abccollege.com</p>
+
+  <form onsubmit="submitForm(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Message"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<!-- 🔻 Footer -->
+<footer>
+  <p>© 2026 ABC College</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
